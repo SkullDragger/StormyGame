@@ -18,7 +18,7 @@ public partial class Player : CharacterBody3D
 		
 		// Get the input direction and handle the movement/deceleration.
 		Vector2 inputDir = Input.GetVector("left", "right", "up", "down");
-		Vector3 direction = (Transform.Basis * new Vector3(inputDir.X, 0, inputDir.Y)).Normalized();
+		Vector3 direction = new Vector3(inputDir.X, 0, inputDir.Y).Normalized();
 		if (dashCooldownTimeLeft > 0)
 			dashCooldownTimeLeft -= delta;
 		
@@ -53,8 +53,8 @@ public partial class Player : CharacterBody3D
 				velocity.Z = Mathf.MoveToward(Velocity.Z, 0, Speed);
 			}
 		}
-
 		Velocity = velocity;
 		MoveAndSlide();
+		
 	}
 }
