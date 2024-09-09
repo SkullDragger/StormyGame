@@ -11,6 +11,7 @@ public partial class Player : CharacterBody3D
 	private bool isDashing;
 	private double dashTimeLeft;
 	private double dashCooldownTimeLeft;
+	private Vector3 dashDirection = Vector3.Zero;
 	public override void _PhysicsProcess(double delta)
 	{
 		Vector3 velocity = Velocity;
@@ -26,27 +27,31 @@ public partial class Player : CharacterBody3D
 			isDashing = true;
 			dashTimeLeft = DashDuration;
 			dashCooldownTimeLeft = DashCooldown;
+			dashDirection = direction;
 		}
 		if (isDashing)
 		{
 			if (dashTimeLeft > 0)
 			{
 				dashTimeLeft -= delta;
-				velocity.X = direction.X * DashSpeed;
-				velocity.Z = direction.Z * DashSpeed;
+				velocity.X = dashDirection.X * DashSpeed;
+				velocity.Z = dashDirection.Z * DashSpeed;
 			}
 			else
 				isDashing = false;
 		}
-		if (direction != Vector3.Zero)
-		{
-			velocity.X = direction.X * Speed;
-			velocity.Z = direction.Z * Speed;
-		}
 		else
 		{
-			velocity.X = Mathf.MoveToward(Velocity.X, 0, Speed);
-			velocity.Z = Mathf.MoveToward(Velocity.Z, 0, Speed);
+			if (direction != Vector3.Zero)
+			{
+				velocity.X = direction.X * Speed;
+				velocity.Z = direction.Z * Speed;
+			}
+			else
+			{
+				velocity.X = Mathf.MoveToward(Velocity.X, 0, Speed);
+				velocity.Z = Mathf.MoveToward(Velocity.Z, 0, Speed);
+			}
 		}
 
 		Velocity = velocity;
