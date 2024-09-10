@@ -1,22 +1,27 @@
 [gd_scene load_steps=4 format=3 uid="uid://cap2rrm76yldo"]
 
-[ext_resource type="Script" path="res://Scenes/bullet.gd" id="1_p3unu"]
-
-[sub_resource type="SphereMesh" id="SphereMesh_y8h6v"]
+[ext_resource type="Script" path="res://Scripts/bullet.gd" id="1_p3unu"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_yoqt8"]
 
-[node name="Bullet" type="RigidBody3D"]
-gravity_scale = 0.0
-script = ExtResource("1_p3unu")
-speed = 15.0
+[sub_resource type="SphereMesh" id="SphereMesh_y8h6v"]
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
-mesh = SubResource("SphereMesh_y8h6v")
+[node name="Bullet" type="RigidBody3D"]
+collision_mask = 0
+gravity_scale = 0.0
+continuous_cd = true
+contact_monitor = true
+max_contacts_reported = 1
+script = ExtResource("1_p3unu")
+speed = 20.0
+damage = 1
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 shape = SubResource("SphereShape3D_yoqt8")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+mesh = SubResource("SphereMesh_y8h6v")
 
 [node name="Timer" type="Timer" parent="."]

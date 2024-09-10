@@ -13,10 +13,14 @@
   <component name="ChangeListManager">
     <list default="true" id="cb9b8af2-9507-424b-80f9-cd3cdd0578ed" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StormyGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StormyGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/Bullet.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Bullet.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/WeaponController.gd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/bullet.gd" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Scenes/main.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/main.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scripts/main.gd" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/main.gd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/project.godot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/mixamo_base.glb.import" beforeDir="false" afterPath="$PROJECT_DIR$/models/mixamo_base.glb.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/textures/grids/Purple/texture_01.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/textures/grids/Purple/texture_01.png.import" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,33 +30,33 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2lqT8lBO9qrlGRq5KpUWeTpQLQl" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "NitoVal-Branch",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;NitoVal-Branch&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\nitov\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\nitov\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\nitov\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\nitov\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\nitov\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\nitov\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -62,6 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1725906452000</updated>
       <workItem from="1725906455788" duration="19909000" />
+      <workItem from="1725974261956" duration="5456000" />
     </task>
     <servers />
   </component>
