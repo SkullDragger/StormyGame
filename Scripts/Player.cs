@@ -1,8 +1,12 @@
 using Godot;
-using System;
 
 public partial class Player : CharacterBody3D
 {
+	[Export] public float ShootCooldown = 0.5f;
+	[Export] public float ProjectileSpeed = 20.0f;
+	
+	private Node3D firepoint;
+	private bool canShoot = true;
 	public const float Speed = 5.0f;
 	public const float DashSpeed = 20.0f;
 	public const float DashDuration = 0.2f; // How long the dash lasts
@@ -55,6 +59,5 @@ public partial class Player : CharacterBody3D
 		}
 		Velocity = velocity;
 		MoveAndSlide();
-		
 	}
 }

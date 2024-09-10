@@ -2,6 +2,7 @@ extends Node3D
 
 var ray_origin = Vector3()
 var ray_target = Vector3()
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	var mouse_pos = get_viewport().get_mouse_position()
@@ -16,7 +17,6 @@ func _process(delta: float) -> void:
 	var raycast_result = space.intersect_ray(ray_query)
 	
 	if not raycast_result.is_empty():
-		print("Not empty")
 		var pos = raycast_result.position
 		var look_at_me = Vector3(pos.x, $Player.position.y, pos.z)
 		$Player.look_at(look_at_me, Vector3.UP)
