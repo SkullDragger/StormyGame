@@ -79,7 +79,6 @@ size = Vector3(2, 2, 2)
 transform = Transform3D(0.300789, 0, 0.953691, 0, 1, 0, -0.953691, 0, 0.300789, -0.0665832, 0.983683, -8.88012)
 material_override = SubResource("StandardMaterial3D_l1e44")
 use_collision = true
-collision_layer = 2
 size = Vector3(3, 2, 2)
 
 [node name="Player" type="CharacterBody3D" parent="." node_paths=PackedStringArray("camera")]

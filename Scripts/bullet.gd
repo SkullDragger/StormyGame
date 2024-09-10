@@ -23,8 +23,7 @@ func _integrate_forces(state: PhysicsDirectBodyState3D) -> void:
     if state.get_contact_count() > 0:
         for i in range(state.get_contact_count()):
             var collider = state.get_contact_collider_object(i)
-
             # Check if the collider has the 'enemy.gd' script attached
             if collider is Enemy:  
                 collider.call("take_damage", damage)
-                queue_free()  # Destroy the bullet after hitting the enemy
+            queue_free()  # Destroy the bullet
