@@ -12,37 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb9b8af2-9507-424b-80f9-cd3cdd0578ed" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.StormyGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StormyGame/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scenes/main.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/main.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WizardMixamoAnimations/Running.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/WizardMixamoAnimations/Running.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WizardMixamoAnimations/Running.fbx.import" beforeDir="false" afterPath="$PROJECT_DIR$/WizardMixamoAnimations/Running.fbx.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WizardMixamoAnimations/Standing 1H Magic Attack 01.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WizardMixamoAnimations/Standing 1H Magic Attack 01.fbx.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WizardMixamoAnimations/Standing 1H Magic Attack 02.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WizardMixamoAnimations/Standing 1H Magic Attack 02.fbx.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WizardMixamoAnimations/Standing 1H Magic Attack 03.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WizardMixamoAnimations/Standing 1H Magic Attack 03.fbx.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WizardMixamoAnimations/Standing 2H Cast Spell 01.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WizardMixamoAnimations/Standing 2H Cast Spell 01.fbx.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WizardMixamoAnimations/Standing 2H Magic Area Attack 01.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WizardMixamoAnimations/Standing 2H Magic Area Attack 01.fbx.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WizardMixamoAnimations/Standing 2H Magic Area Attack 02.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WizardMixamoAnimations/Standing 2H Magic Area Attack 02.fbx.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WizardMixamoAnimations/Standing 2H Magic Attack 01.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WizardMixamoAnimations/Standing 2H Magic Attack 01.fbx.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WizardMixamoAnimations/Standing 2H Magic Attack 02.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/WizardMixamoAnimations/Standing 2H Magic Attack 02.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WizardMixamoAnimations/Standing 2H Magic Attack 02.fbx.import" beforeDir="false" afterPath="$PROJECT_DIR$/WizardMixamoAnimations/Standing 2H Magic Attack 02.fbx.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WizardMixamoAnimations/Standing 2H Magic Attack 03.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WizardMixamoAnimations/Standing 2H Magic Attack 03.fbx.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WizardMixamoAnimations/Standing 2H Magic Attack 04.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WizardMixamoAnimations/Standing 2H Magic Attack 04.fbx.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WizardMixamoAnimations/Standing 2H Magic Attack 05.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WizardMixamoAnimations/Standing 2H Magic Attack 05.fbx.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WizardMixamoAnimations/Wizard1.fbx.import" beforeDir="false" afterPath="$PROJECT_DIR$/WizardMixamoAnimations/Wizard1.fbx.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WizardMixamoAnimations/standing 1H cast spell 01.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WizardMixamoAnimations/standing 1H cast spell 01.fbx.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/project.godot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/WeaponController.gd" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/WeaponController.gd" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +61,7 @@
       <workItem from="1725906455788" duration="19909000" />
       <workItem from="1725974261956" duration="5456000" />
       <workItem from="1725992293228" duration="2480000" />
-      <workItem from="1726060495868" duration="4438000" />
+      <workItem from="1726060495868" duration="5480000" />
     </task>
     <servers />
   </component>

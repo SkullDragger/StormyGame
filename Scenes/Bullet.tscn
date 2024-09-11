@@ -1,10 +1,20 @@
-[gd_scene load_steps=4 format=3 uid="uid://cap2rrm76yldo"]
+[gd_scene load_steps=7 format=3 uid="uid://cap2rrm76yldo"]
 
 [ext_resource type="Script" path="res://Scripts/bullet.gd" id="1_p3unu"]
+[ext_resource type="Shader" path="res://Outline.gdshader" id="2_syvcc"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_yoqt8"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_y8h6v"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_liofb"]
+render_priority = 0
+shader = ExtResource("2_syvcc")
+shader_parameter/outline_color = Color(0, 1, 0, 1)
+shader_parameter/outline_width = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wlqsg"]
+next_pass = SubResource("ShaderMaterial_liofb")
 
 [node name="Bullet" type="RigidBody3D"]
 collision_mask = 0
@@ -23,5 +33,6 @@ shape = SubResource("SphereShape3D_yoqt8")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 mesh = SubResource("SphereMesh_y8h6v")
+surface_material_override/0 = SubResource("StandardMaterial3D_wlqsg")
 
 [node name="Timer" type="Timer" parent="."]

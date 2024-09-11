@@ -7,7 +7,7 @@ public partial class Player : CharacterBody3D
 	public int Hp = 3;
 	
 	private bool _canShoot = true;
-	public const float Speed = 7.0f;
+	public float Speed = 7.0f;
 	public const float DashSpeed = 20.0f;
 	public const float DashDuration = 0.2f;
 	public const float DashCooldown = 1.0f;
@@ -16,6 +16,7 @@ public partial class Player : CharacterBody3D
 	private double _dashTimeLeft;
 	private double _dashCooldownTimeLeft;
 	private Vector3 _dashDirection = Vector3.Zero;
+	public const float ShootingSpeedMultiplier = 0.5f;
 	public override void _PhysicsProcess(double delta)
 	{
 		Vector3 velocity = Velocity;
