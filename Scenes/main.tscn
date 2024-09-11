@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://cap2rrm76yldo" path="res://Scenes/Bullet.tscn" id="6_6yfmn"]
 [ext_resource type="Script" path="res://Scripts/WeaponController.gd" id="6_c68b7"]
 [ext_resource type="PackedScene" uid="uid://v5xhqqt4s2cc" path="res://WizardMixamoAnimations/Wizard1.fbx" id="9_i6f8u"]
-[ext_resource type="PackedScene" uid="uid://d3nmeg4hgi17g" path="res://Scenes/Enemy.tscn" id="11_p6h4h"]
+[ext_resource type="PackedScene" uid="uid://c0irn1qhp3rls" path="res://Scenes/Enemy.tscn" id="11_p6h4h"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_6adew"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)

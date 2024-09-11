@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://b2yukaftlxyv1"
-path="res://.godot/imported/standing idle.fbx-1af45d325a86ae08ba4c403ae8d04a8b.scn"
+valid=false
 
 [deps]
 
 source_file="res://WizardMixamoAnimations/standing idle.fbx"
-dest_files=["res://.godot/imported/standing idle.fbx-1af45d325a86ae08ba4c403ae8d04a8b.scn"]
 
 [params]
 

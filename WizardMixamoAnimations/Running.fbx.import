@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bdqtalia4ukkr"
-path="res://.godot/imported/Running.fbx-0c3eaab5c1bf3541fe2f2df952e727c9.scn"
+valid=false
 
 [deps]
 
 source_file="res://WizardMixamoAnimations/Running.fbx"
-dest_files=["res://.godot/imported/Running.fbx-0c3eaab5c1bf3541fe2f2df952e727c9.scn"]
 
 [params]
 

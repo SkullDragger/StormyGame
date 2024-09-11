@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://lsdlyo012lag"
-path="res://.godot/imported/Standing 2H Magic Attack 02.fbx-88fa64a27ee17b970272aa9b66f29e39.scn"
+valid=false
 
 [deps]
 
 source_file="res://WizardMixamoAnimations/Standing 2H Magic Attack 02.fbx"
-dest_files=["res://.godot/imported/Standing 2H Magic Attack 02.fbx-88fa64a27ee17b970272aa9b66f29e39.scn"]
 
 [params]
 
