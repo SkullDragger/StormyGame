@@ -5,7 +5,6 @@ public partial class Player : CharacterBody3D
 	[Export] public Camera3D camera;
 	public int Hp = 3;
 	
-	
 	private bool _canShoot = true;
 	public const float Speed = 7.0f;
 	public const float DashSpeed = 20.0f;

@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dq2mdmji1oaah"
-path="res://.godot/imported/Wizard1.fbx-ffa3f3681e79e488745180a8564786f8.scn"
+uid="uid://uftffsc8mc70"
+path="res://.godot/imported/Standing 2H Magic Attack 04.fbx-3a26d5606a0027a860b2416d7fdb58d5.scn"
 
 [deps]
 
-source_file="res://models/Wizard1.fbx"
-dest_files=["res://.godot/imported/Wizard1.fbx-ffa3f3681e79e488745180a8564786f8.scn"]
+source_file="res://WizardMixamoAnimations/Standing 2H Magic Attack 04.fbx"
+dest_files=["res://.godot/imported/Standing 2H Magic Attack 04.fbx-3a26d5606a0027a860b2416d7fdb58d5.scn"]
 
 [params]
 

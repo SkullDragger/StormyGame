@@ -13,14 +13,12 @@
   <component name="ChangeListManager">
     <list default="true" id="cb9b8af2-9507-424b-80f9-cd3cdd0578ed" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StormyGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StormyGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/Bullet.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Bullet.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/WeaponController.gd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/bullet.gd" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Scenes/main.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/main.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/main.gd" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/main.gd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/mixamo_base.glb.import" beforeDir="false" afterPath="$PROJECT_DIR$/models/mixamo_base.glb.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/textures/grids/Purple/texture_01.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/textures/grids/Purple/texture_01.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Wizard1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Wizard1.fbx.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/mixamo_base.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/mixamo_base.glb.import" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +65,7 @@
       <updated>1725906452000</updated>
       <workItem from="1725906455788" duration="19909000" />
       <workItem from="1725974261956" duration="5456000" />
+      <workItem from="1725992293228" duration="2480000" />
     </task>
     <servers />
   </component>
