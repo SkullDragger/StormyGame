@@ -2,7 +2,8 @@ using Godot;
 
 public partial class Player : CharacterBody3D
 {
-	[Export] public Camera3D camera;
+	[Export] public Camera3D Camera;
+	[Export] public AnimationPlayer AnimationPlayer;
 	public int Hp = 3;
 	
 	private bool _canShoot = true;
@@ -49,6 +50,7 @@ public partial class Player : CharacterBody3D
 			{
 				velocity.X = direction.X * Speed;
 				velocity.Z = direction.Z * Speed;
+				PlayAnimation("walk");
 			}
 			else
 			{
@@ -60,7 +62,12 @@ public partial class Player : CharacterBody3D
 		MoveAndSlide();
 
 		Vector3 targetPosition = new Vector3(Position.X, 15f, Position.Z);
-		camera.GlobalTransform = new Transform3D(camera.GlobalTransform.Basis, camera.GlobalTransform.Origin.Lerp(targetPosition, 0.1f)  // Smooth follow
+		Camera.GlobalTransform = new Transform3D(Camera.GlobalTransform.Basis, Camera.GlobalTransform.Origin.Lerp(targetPosition, 0.1f)  // Smooth follow
 		);
+	}
+	private void PlayAnimation(string animationName)
+	{
+		if (!AnimationPlayer.IsPlaying() || AnimationPlayer.CurrentAnimation != animationName)
+			AnimationPlayer.Play(animationName);
 	}
 }

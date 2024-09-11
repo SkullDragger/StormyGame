@@ -15,10 +15,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StormyGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StormyGame/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scenes/main.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/main.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Wizard1.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Wizard1.fbx.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/mixamo_base.glb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/mixamo_base.glb.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WizardMixamoAnimations/Running.fbx.import" beforeDir="false" afterPath="$PROJECT_DIR$/WizardMixamoAnimations/Running.fbx.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WizardMixamoAnimations/Standing 2H Magic Attack 02.fbx.import" beforeDir="false" afterPath="$PROJECT_DIR$/WizardMixamoAnimations/Standing 2H Magic Attack 02.fbx.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WizardMixamoAnimations/standing idle.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WizardMixamoAnimations/standing idle.fbx.import" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
