@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://dnpceine1bksc"]
+
+[ext_resource type="Texture2D" uid="uid://bft1t8k7xdbd6" path="res://Images/BGhp.png" id="1_80alm"]
+[ext_resource type="Texture2D" uid="uid://ciuxig163xbcr" path="res://Images/fillhp.png" id="2_dwqvm"]
+
+[sub_resource type="Theme" id="Theme_70rgj"]
+
+[sub_resource type="Theme" id="Theme_8cauj"]
+Label/font_sizes/font_size = 30
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Bar" type="HBoxContainer" parent="."]
+modulate = Color(1, 1, 1, 0.745098)
+offset_right = 441.0
+offset_bottom = 53.0
+scale = Vector2(0.6, 0.6)
+theme = SubResource("Theme_70rgj")
+
+[node name="Label" type="Label" parent="Bar"]
+layout_direction = 1
+layout_mode = 2
+theme = SubResource("Theme_8cauj")
+text = "HP"
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="Bar"]
+layout_mode = 2
+max_value = 3.0
+value = 1.0
+texture_under = ExtResource("1_80alm")
+texture_progress = ExtResource("2_dwqvm")

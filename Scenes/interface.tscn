@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://c4lp0iw5kujuq"]
+
+[ext_resource type="PackedScene" uid="uid://dnpceine1bksc" path="res://Scenes/LifeBar.tscn" id="2_28lk7"]
+[ext_resource type="PackedScene" uid="uid://cbfhj701amwbm" path="res://Scenes/MagicBar2.tscn" id="3_0hn46"]
+[ext_resource type="PackedScene" uid="uid://bd2dele1kacp" path="res://Scenes/MagicBar.tscn" id="3_nybif"]
+
+[node name="Interface" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1150.0
+offset_bottom = 649.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(200, 30)
+layout_mode = 1
+offset_top = -1.0
+offset_right = 317.0
+offset_bottom = 159.0
+scale = Vector2(1.5, 1.5)
+
+[node name="HPbar" parent="HBoxContainer" instance=ExtResource("2_28lk7")]
+position = Vector2(13, 13)
+
+[node name="HPmagic" parent="HBoxContainer" instance=ExtResource("3_nybif")]
+position = Vector2(14, 60)
+
+[node name="Node2D" parent="HBoxContainer" instance=ExtResource("3_0hn46")]
+position = Vector2(16, 111)

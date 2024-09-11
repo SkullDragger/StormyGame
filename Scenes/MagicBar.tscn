@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://bd2dele1kacp"]
+
+[ext_resource type="Texture2D" uid="uid://ddcv4sbw3ksnw" path="res://Images/BGmagic.png" id="1_33u6r"]
+[ext_resource type="Texture2D" uid="uid://do42ri6xyjoo" path="res://Images/fillmagic.png" id="2_3elyk"]
+
+[sub_resource type="Theme" id="Theme_8cauj"]
+Label/font_sizes/font_size = 30
+
+[node name="MagicBar" type="Node2D"]
+
+[node name="Bar" type="HBoxContainer" parent="."]
+modulate = Color(1, 1, 1, 0.745098)
+offset_right = 497.0
+offset_bottom = 53.0
+scale = Vector2(0.6, 0.6)
+
+[node name="Label" type="Label" parent="Bar"]
+layout_mode = 2
+theme = SubResource("Theme_8cauj")
+text = "MAGIC"
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="Bar"]
+layout_mode = 2
+value = 40.0
+texture_under = ExtResource("1_33u6r")
+texture_progress = ExtResource("2_3elyk")
