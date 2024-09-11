@@ -22,6 +22,5 @@ func _process(delta: float) -> void:
         var bullet = bullet_prefab.instantiate()
         root_node.add_child(bullet)
         bullet.position = shoot_position.global_position
-        
         bullet.direction = -get_global_transform().basis.z
     pass

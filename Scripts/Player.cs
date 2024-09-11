@@ -50,12 +50,13 @@ public partial class Player : CharacterBody3D
 			{
 				velocity.X = direction.X * Speed;
 				velocity.Z = direction.Z * Speed;
-				PlayAnimation("walk");
+				PlayAnimation("PlayerLibrary/Running");
 			}
 			else
 			{
 				velocity.X = Mathf.MoveToward(Velocity.X, 0, Speed);
 				velocity.Z = Mathf.MoveToward(Velocity.Z, 0, Speed);
+				PlayAnimation("PlayerLibrary/Idle");
 			}
 		}
 		Velocity = velocity;
