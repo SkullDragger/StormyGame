@@ -1,11 +1,13 @@
-[gd_scene load_steps=29 format=4 uid="uid://cphl45cl0fokc"]
+[gd_scene load_steps=33 format=4 uid="uid://cphl45cl0fokc"]
 
 [ext_resource type="Script" path="res://Scripts/main.gd" id="1_xwgw0"]
 [ext_resource type="Script" path="res://Scripts/Player.cs" id="4_s2nsr"]
 [ext_resource type="PackedScene" uid="uid://cap2rrm76yldo" path="res://Scenes/Bullet.tscn" id="6_6yfmn"]
 [ext_resource type="Script" path="res://Scripts/WeaponController.gd" id="6_c68b7"]
 [ext_resource type="PackedScene" uid="uid://cp5hbxtax7d0p" path="res://Models/FBX/snowIsland.fbx" id="7_61sc5"]
+[ext_resource type="PackedScene" uid="uid://dkwk3kpqjhixd" path="res://Models/snow_island.tscn" id="8_rtpka"]
 [ext_resource type="PackedScene" uid="uid://tk8nq7jslvaf" path="res://Models/island.tscn" id="9_jo2iw"]
+[ext_resource type="PackedScene" uid="uid://cmanoe8bdxlfd" path="res://Models/sand_island.tscn" id="9_vf6rx"]
 [ext_resource type="PackedScene" uid="uid://c0irn1qhp3rls" path="res://Scenes/Enemy.tscn" id="11_p6h4h"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_6adew"]
@@ -6066,6 +6068,14 @@ _data = {
 "Running": SubResource("Animation_g6e0c")
 }
 
+[sub_resource type="CylinderMesh" id="CylinderMesh_quq0d"]
+top_radius = 6.46
+bottom_radius = 6.46
+height = 7.96
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_54l26"]
+points = PackedVector3Array(-6.34645, -3.94789, -1.18915, 6.33753, 3.98, 1.18736, 6.13779, 3.98, 1.98017, 6.34647, -3.94749, 1.18903, 1.18763, 3.98, -6.33752, -3.34796, 3.95932, 5.51576, 1.18929, -3.94747, 6.34643, 2.966, -3.936, -5.73466, -5.11493, 3.9543, -3.93463, -2.56667, -3.93062, -5.92357, -4.35985, -3.94467, 4.75646, -6.33687, 3.98, 1.18736, 2.966, 3.9741, 5.73466, 5.51555, 3.95913, -3.3483, 4.94376, -3.93652, 4.15319, 6.14359, -3.94564, -1.98204, -2.56667, 3.96871, -5.92357, -1.1882, 3.98, 6.33752, -5.73461, -3.93639, 2.96611, -1.9813, -3.94503, 6.14385, -4.35985, -3.94467, -4.75646, -5.11493, 3.9543, 3.93463, -1.18986, -3.94742, -6.34635, -6.33687, 3.98, -1.18736, 3.93443, 3.95396, -5.11508, 4.94376, -3.93652, -4.15319, 6.33753, 3.98, -1.18736, 4.94376, 3.97461, 4.15319, -5.73461, -3.93639, -2.96611, 3.34844, -3.92101, 5.51547, 1.18929, -3.94747, -6.34643, -6.34645, -3.94789, 1.18915)
+
 [node name="world" type="Node3D"]
 script = ExtResource("1_xwgw0")
 
@@ -6079,7 +6089,7 @@ environment = SubResource("Environment_604yb")
 [node name="Map" type="Node3D" parent="."]
 
 [node name="Player" type="CharacterBody3D" parent="." node_paths=PackedStringArray("Camera", "AnimationPlayer")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.01086e-05, 1.87093, -0.00918961)
 script = ExtResource("4_s2nsr")
 Camera = NodePath("../Camera3D")
 AnimationPlayer = NodePath("Mage/AnimationPlayer")
@@ -6976,28 +6986,68 @@ current = true
 fov = 90.0
 
 [node name="Enemy" parent="." instance=ExtResource("11_p6h4h")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8401, -9.53674e-07, -14.9977)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -61.801, 0.815099, -7.34393)
+
+[node name="Enemy2" parent="." instance=ExtResource("11_p6h4h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -102.55, 1.77247, -76.6973)
+
+[node name="Enemy3" parent="." instance=ExtResource("11_p6h4h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -212.613, 0.341133, -95.9086)
 
 [node name="Island" parent="." instance=ExtResource("9_jo2iw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.63815, 1.71542, -5.67681)
 
 [node name="Island4" parent="." instance=ExtResource("9_jo2iw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.7713, 0.620015, -5.67681)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.7713, 1.74963, -5.67681)
 
 [node name="Island2" parent="." instance=ExtResource("9_jo2iw")]
-transform = Transform3D(0.34462, 0, 0, 0, 0.34462, 0, 0, 0, 0.34462, -23.7656, 0.295724, 10.0795)
+transform = Transform3D(0.34462, 0, 0, 0, 0.34462, 0, 0, 0, 0.34462, -23.7656, 0.551092, 10.0795)
 
 [node name="Island5" parent="." instance=ExtResource("9_jo2iw")]
-transform = Transform3D(0.34462, 0, 0, 0, 0.34462, 0, 0, 0, 0.34462, -82.5067, -0.0707326, -13.4063)
+transform = Transform3D(0.34462, 0, 0, 0, 0.34462, 0, 0, 0, 0.34462, -82.5067, 0.283837, -13.4063)
 
 [node name="Island6" parent="." instance=ExtResource("9_jo2iw")]
-transform = Transform3D(0.34462, 0, 0, 0, 0.34462, 0, 0, 0, 0.34462, -91.798, 0.160987, -24.6364)
+transform = Transform3D(0.34462, 0, 0, 0, 0.34462, 0, 0, 0, 0.34462, -91.798, 0.444131, -24.6364)
 
 [node name="Island3" parent="." instance=ExtResource("9_jo2iw")]
-transform = Transform3D(0.227168, 0, 0, 0, 0.227168, 0, 0, 0, 0.227168, -34.7389, -0.0707335, 4.97054)
+transform = Transform3D(0.227168, 0, 0, 0, 0.227168, 0, 0, 0, 0.227168, -34.7389, 0.330135, 4.97054)
 
 [node name="snowIsland" parent="." instance=ExtResource("7_61sc5")]
-transform = Transform3D(0.133758, 0, -0.436086, 0, 0.456139, 0, 0.436086, 0, 0.133758, -101.331, 0.0613489, -37.7468)
+transform = Transform3D(0.133758, 0, -0.436086, 0, 0.456139, 0, 0.436086, 0, 0.133758, -101.331, 0.639747, -37.7468)
 
 [node name="snowIsland2" parent="." instance=ExtResource("7_61sc5")]
-transform = Transform3D(0.29324, 0, -0.956039, 0, 1, 0, 0.956039, 0, 0.29324, -107.509, 0.756497, -67.1498)
+transform = Transform3D(0.29324, 0, -0.956039, 0, 1, 0, 0.956039, 0, 0.29324, -107.509, 1.59316, -67.1498)
+
+[node name="snowIsland3" parent="." instance=ExtResource("8_rtpka")]
+transform = Transform3D(0.475139, 0, -0.17461, 0, 0.506208, 0, 0.17461, 0, 0.475139, -130.881, 0.664682, -88.2658)
+
+[node name="snowIsland4" parent="." instance=ExtResource("8_rtpka")]
+transform = Transform3D(0.592404, 0, -0.213639, 0, 0.506208, 0, 0.217704, 0, 0.581342, -149.594, 0.541673, -99.6004)
+
+[node name="sandIsland" parent="." instance=ExtResource("9_vf6rx")]
+transform = Transform3D(0.596411, 0, -0.121778, 0, 1, 0, 0.11238, 0, 0.646283, -175.548, 1.36944, -94.5087)
+
+[node name="sandIsland2" parent="." instance=ExtResource("9_vf6rx")]
+transform = Transform3D(0.714131, 0, 0, 0, 0.714131, 0, 0, 0, 0.714131, -193.139, 0.805995, -74.066)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="sandIsland2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 282.16, 3.72669, 89.4789)
+mesh = SubResource("CylinderMesh_quq0d")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="sandIsland2/MeshInstance3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="sandIsland2/MeshInstance3D/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_54l26")
+
+[node name="sandIsland3" parent="." instance=ExtResource("9_vf6rx")]
+transform = Transform3D(0.1793, 0, -0.983794, 0, 1, 0, 0.983794, 0, 0.1793, -220.828, 0.701555, -95.4259)
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.56968, 0, 0, 0, 0.56968, 0, 0, 0, 0.56968, 8.36028, 8.46608, -10.1663)
+mesh = SubResource("CylinderMesh_quq0d")
+skeleton = NodePath("../sandIsland2")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D2/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_54l26")
