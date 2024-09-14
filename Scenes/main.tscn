@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=4 uid="uid://cphl45cl0fokc"]
+[gd_scene load_steps=34 format=4 uid="uid://cphl45cl0fokc"]
 
 [ext_resource type="Script" path="res://Scripts/main.gd" id="1_xwgw0"]
 [ext_resource type="Script" path="res://Scripts/Player.cs" id="4_s2nsr"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://dkwk3kpqjhixd" path="res://Models/snow_island.tscn" id="8_rtpka"]
 [ext_resource type="PackedScene" uid="uid://tk8nq7jslvaf" path="res://Models/island.tscn" id="9_jo2iw"]
 [ext_resource type="PackedScene" uid="uid://cmanoe8bdxlfd" path="res://Models/sand_island.tscn" id="9_vf6rx"]
+[ext_resource type="PackedScene" uid="uid://fq768oi6g8lw" path="res://Models/Props/tree.tscn" id="10_n63qa"]
 [ext_resource type="PackedScene" uid="uid://c0irn1qhp3rls" path="res://Scenes/Enemy.tscn" id="11_p6h4h"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_6adew"]
@@ -7051,3 +7052,9 @@ skeleton = NodePath("../sandIsland2")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D2/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_54l26")
+
+[node name="Tree" parent="." instance=ExtResource("10_n63qa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.0387, 0.470224, -13.9062)
+
+[node name="Tree2" parent="." instance=ExtResource("10_n63qa")]
+transform = Transform3D(0.44637, 0, -0.894849, 0, 1, 0, 0.894849, 0, 0.44637, -64.1629, 0.470224, -21.8648)
