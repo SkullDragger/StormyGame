@@ -1,0 +1,58 @@
+[gd_scene load_steps=7 format=3 uid="uid://cqhlvxhs0aix3"]
+
+[ext_resource type="Script" path="res://Scripts/level_1.gd" id="1_8xw5f"]
+[ext_resource type="FontFile" uid="uid://5kuiy14sjim" path="res://nuku1.ttf" id="2_e3irx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_u1b7e"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_111cd"]
+bg_color = Color(0.758192, 0.758192, 0.758192, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_color = Color(0, 0, 0, 0.619608)
+shadow_size = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gp6dj"]
+bg_color = Color(0.362829, 0.362829, 0.362829, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_color = Color(0, 0, 0, 0.619608)
+shadow_size = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rqhin"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_color = Color(0, 0, 0, 0.619608)
+shadow_size = 5
+
+[node name="Level1" type="Node3D"]
+script = ExtResource("1_8xw5f")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Back Button" type="Button" parent="CanvasLayer"]
+offset_left = 23.0
+offset_top = 23.0
+offset_right = 142.0
+offset_bottom = 85.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_e3irx")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/focus = SubResource("StyleBoxEmpty_u1b7e")
+theme_override_styles/hover = SubResource("StyleBoxFlat_111cd")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_gp6dj")
+theme_override_styles/normal = SubResource("StyleBoxFlat_rqhin")
+text = "Quit"
+
+[connection signal="pressed" from="CanvasLayer/Back Button" to="." method="_on_in_game_back_button_pressed"]
